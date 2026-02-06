@@ -1,0 +1,99 @@
+#header{
+    background:
+        linear-gradient(to bottom, rgba(0,0,0,0.4) 80%,  #f1f5f9 100%), url("../css/images/download\ \(14\).jpg");
+    /*background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url("../css/images/download (14).jpg");*/  /* can also use this--> background-image: url('/css/images/download\ \(14\).jpg'); BUT Overlay seems more professional */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0px 40px;
+    min-height: 100vh;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    /* justify-content: flex-end;*/  /* --> Align content to the bottom */
+}
+#header p{
+    font-style: italic;
+    margin: 0;
+    padding-top: 100px;
+}
+#all-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: -15px -15px 5px rgba(0,0,0,0.08);
+}
+.card{
+    /* border: 2px solid black; */
+    border-radius: 16px;
+    background-color: #f8fafc;
+    margin: 35px;
+    width: 500px;
+    box-shadow: 15px 15px 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.card-text{
+    font-size: 20px;
+    padding: 20px;
+    color: #4b5563;
+}
+#instructions{
+    /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url("../css/images/download (11).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    padding: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #fff3e0;
+}
+#instructions h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+#instructions ul{
+    font-size: 24px;
+    text-align: left;
+    display: inline-block;
+}
+.same-bg{
+    background:
+        linear-gradient(to top, rgba(0,0,0,0.4) 60%,  #f1f5f9 100%), url("../css/images/digital-art-fire.jpg");
+    /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url("../css/images/digital-art-fire.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer{
+   /* height: 250px;
+    background:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+        url('../css/images/download\ \(12\).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */ /*--> was for when footer also had a background image and all 3 all-cards, instructions & footer were divided and not under the same class. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
